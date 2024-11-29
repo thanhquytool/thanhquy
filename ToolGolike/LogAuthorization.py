@@ -88,7 +88,7 @@ os.system('cls' if os.name== 'nt' else 'clear')
 banner()
 checkfile = os.path.isfile('user.txt')
 if checkfile == False:
-    AUTHUR = input(Fore.GREEN+'\033[1;97m[\033[1;91m✍\033[1;97m] \033[1;36m✈  \033[1;32mNhập Authorization Golike: ')
+    AUTHUR = input(Fore.GREEN+'\033[1;32m>\033[1;31m>\033[1;33m> \033[1;32mNhập Authorization Golike: \033[1;37m')
     createfile = open('user.txt','w')
     createfile.write(AUTHUR)
     createfile.close()
